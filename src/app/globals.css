@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Namibian Hockey Union - Brand Tokens
+   Per BRAND.md - "Pitch and Coast"
+   Art-direction owner: design-taste-frontend (taste-skill)
+   ============================================================ */
+
+@theme {
+  /* Colour tokens (verified against BRAND.md accessible pairings) */
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #F5F7FA;
+  --color-ink: #0A1A2F;
+  --color-ink-muted: #54607A;
+  --color-ink-muted-on-dark: #94A3B8; /* WCAG AA on #0A1A2F: 6.0:1 */
+  --color-border: #D6DCE5;
+  --color-accent: #FCD116;
+  --color-live: #D21034;
+  --color-success: #1E8449;
+
+  /* Typography tokens */
+  --font-display: var(--font-bricolage-grotesque), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Container */
+  --container-page: 1400px;
+
+  /* Radius scale (per BRAND.md shape consistency lock) */
+  --radius-sharp: 0px;
+  --radius-card: 8px;
+  --radius-pill: 9999px;
+}
+
+:root {
+  --background: #FFFFFF;
+  --foreground: #0A1A2F;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Base */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Numeric / fixtures */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  padding: 0.75rem 1rem;
+  background: var(--color-ink);
+  color: var(--color-surface);
+  border-radius: 0 0 8px 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Hide horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
