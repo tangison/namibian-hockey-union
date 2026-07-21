@@ -68,7 +68,10 @@ function DemoBanner() {
           <span className="font-mono uppercase tracking-wider text-[10px] px-1.5 py-0.5 bg-accent text-ink rounded-full">
             Demo
           </span>
-          <span>This is a preview of the new NHU website. Only the home and brand pages are unlocked.</span>
+          <span>
+            Preview of the new NHU website at{" "}
+            <span className="font-mono font-semibold">hockey.tangison.com</span>. Live data — fixtures, results, news — marked “Coming soon”.
+          </span>
         </p>
       </Container>
     </div>
@@ -263,7 +266,7 @@ function PrimaryPathways() {
       icon: CalendarBlank,
       label: "Fixtures",
       description: "Upcoming matches, dates, venues, and kick-off times across all competitions.",
-      status: "Locked in demo",
+      status: "Coming soon",
       tint: "live",
       image: "/imagery/img-16-4e0734.jpg",
     },
@@ -272,7 +275,7 @@ function PrimaryPathways() {
       icon: MapPin,
       label: "Clubs",
       description: "Find a hockey club in your region. Training times, contacts, and teams.",
-      status: "Locked in demo",
+      status: "Coming soon",
       tint: "accent",
       image: "/imagery/img-13-5a7aa3.jpg",
     },
@@ -281,7 +284,7 @@ function PrimaryPathways() {
       icon: Trophy,
       label: "National teams",
       description: "Men and women, outdoor and indoor, junior and senior. Squads, fixtures, results.",
-      status: "Locked in demo",
+      status: "Verified",
       tint: "success",
       image: "/imagery/img-01-899b19.jpg",
     },

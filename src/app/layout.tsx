@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { DemoPopup } from "@/components/demo-popup";
 import { OrganizationJsonLd, WebsiteJsonLd } from "@/components/json-ld";
 
 const bricolage = Bricolage_Grotesque({
@@ -24,7 +25,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://namibiahockey.org"),
+  metadataBase: new URL("https://hockey.tangison.com"),
   title: {
     default: "Namibian Hockey Union",
     template: "%s | Namibian Hockey Union",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_NA",
-    url: "https://namibiahockey.org",
+    url: "https://hockey.tangison.com",
     siteName: "Namibian Hockey Union",
     title: "Namibian Hockey Union",
     description:
@@ -93,6 +94,7 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <DemoPopup />
       </body>
     </html>
   );
