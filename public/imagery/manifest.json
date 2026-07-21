@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-07-21T04:18:33.656Z",
+  "source": "Tavily API image search (broad)",
+  "license": "Imagery sourced via Tavily from public Namibian sport media, Africa Hockey, FIH, Olympics.com, FISU, NHU social channels. Used here in demo mode for the NHU website preview only. Production deployment must obtain a written licence from each rights holder before reuse.",
+  "images": [
+    {
+      "file": "img-01-899b19.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/06/Namibiamen.jpg",
+      "query": "Namibia men's hockey team photo",
+      "bytes": 138509,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-02-455cea.jpg",
+      "sourceUrl": "https://observer24.com.na/wp-content/uploads/2023/11/men-hockey-800x500.jpg?v=1699947301",
+      "query": "Namibia men's hockey team photo",
+      "bytes": 0,
+      "ok": false
+    },
+    {
+      "file": "img-03-bbbcd8.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/09/Namwomen.jpg",
+      "query": "Namibia women's hockey team photo",
+      "bytes": 137972,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-04-b6c169.jpg",
+      "sourceUrl": "https://neweralive.na/wp-content/uploads/2024/06/hockey-jpg-1-3.jpg",
+      "query": "Namibia women's hockey team photo",
+      "bytes": 123975,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-05-5271fe.jpg",
+      "sourceUrl": "https://www.africahockey.org/wp-content/uploads/2024/04/indoor_africa_cup_logo.jpg",
+      "query": "Namibia indoor hockey Africa Cup",
+      "bytes": 27491,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-06-d021f8.jpg",
+      "sourceUrl": "https://www.fisu.net/app/uploads/2023/10/jivanka_kruger1.jpg",
+      "query": "Namibia indoor hockey Africa Cup",
+      "bytes": 76302,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-07-51ffed.jpg",
+      "sourceUrl": "https://www.fih.hockey/static-assets/waf-images/5a/9f/53/4-3/6b34gjFToM.jpg?v=5.31&w=420%20420w",
+      "query": "Namibia hockey junior World Cup",
+      "bytes": 170378,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-08-5b14d8.jpg",
+      "sourceUrl": "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xs_2x/f_auto/primary/a0ql0uleinh7adwa2id2",
+      "query": "Namibia hockey junior World Cup",
+      "bytes": 63445,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-09-feacf3.jpg",
+      "sourceUrl": "https://wwwafricahockeyorg6ed1a.zapwp.com/wp-content/uploads/2022/12/namibia_women_win.jpg",
+      "query": "Namibia hockey Olympic qualifier",
+      "bytes": 290083,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-10-9f8d2d.gif",
+      "sourceUrl": "https://neweralive.na/wp-content/uploads/2024/06/hockey-1-2.gif",
+      "query": "Namibia hockey Olympic qualifier",
+      "bytes": 112125,
+      "ok": true,
+      "contentType": "image/gif"
+    },
+    {
+      "file": "img-11-cf3206.jpg",
+      "sourceUrl": "https://i0.wp.com/informante.web.na/wp-content/uploads/2019/06/65057796_2304234352976845_6222520722632212480_n.jpg?fit=1152%2C647&ssl=1",
+      "query": "Namibia hockey Olympic qualifier",
+      "bytes": 0,
+      "ok": false
+    },
+    {
+      "file": "img-12-4f5075.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/06/ErnestJacobs-1.jpg",
+      "query": "Namibia hockey Olympic qualifier",
+      "bytes": 330925,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-13-5a7aa3.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/06/BraveWarriorsfans-1.jpg",
+      "query": "Namibia hockey fans crowd stadium",
+      "bytes": 528276,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-14-3086c6.jpg",
+      "sourceUrl": "https://pbs.twimg.com/media/HNQH582WwAADIMU.jpg",
+      "query": "Namibia hockey women celebration huddle",
+      "bytes": 88622,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-15-f92a74.webp",
+      "sourceUrl": "https://wwwafricahockeyorg6ed1a.zapwp.com/wp-content/uploads/2024/06/namibia_men_qualify_indoor_2024.webp",
+      "query": "Namibia men hockey World Games",
+      "bytes": 175747,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-16-4e0734.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/10/Callum-Gunning.jpg",
+      "query": "Namibian hockey pitch Astroturf Windhoek",
+      "bytes": 94167,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-17-0e53d4.jpg",
+      "sourceUrl": "https://d4f7y6nbupj5z.cloudfront.net/wp-content/uploads/2022/07/Namibiau20squad.jpg",
+      "query": "Namibia hockey under 21 team",
+      "bytes": 152166,
+      "ok": true,
+      "contentType": "image/jpeg"
+    },
+    {
+      "file": "img-18-9f69b5.jpg",
+      "sourceUrl": "https://neweralive.na/wp-content/uploads/2025/12/Hockey.jpg.jpg",
+      "query": "Namibia hockey under 21 team",
+      "bytes": 343102,
+      "ok": true,
+      "contentType": "image/jpeg"
+    }
+  ]
+}

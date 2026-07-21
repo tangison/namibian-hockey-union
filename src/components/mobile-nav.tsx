@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { List, X } from "@phosphor-icons/react";
 import { Container } from "./container";
+import Image from "next/image";
 
 export type NavItem = { href: string; label: string };
 
@@ -24,8 +25,6 @@ export function MobileNav({ items }: { items: NavItem[] }) {
     };
   }, [open]);
 
-  // Menu is closed by onClick handlers on each Link, not by effect.
-  // This avoids setState-in-effect cascading renders.
   const closeMenu = () => setOpen(false);
   const openMenu = () => setOpen(true);
 
@@ -34,7 +33,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
       <button
         type="button"
         onClick={openMenu}
-        className="inline-flex items-center justify-center h-10 w-10 -mr-2 text-surface hover:text-accent transition-colors"
+        className="inline-flex items-center justify-center h-10 w-10 -mr-2 text-ink hover:text-accent transition-colors rounded-full"
         aria-label="Open menu"
         aria-expanded={open}
         aria-controls="mobile-nav"
@@ -44,17 +43,32 @@ export function MobileNav({ items }: { items: NavItem[] }) {
       {open && (
         <div
           id="mobile-nav"
-          className="fixed inset-0 z-50 bg-ink text-surface flex flex-col"
+          className="fixed inset-0 z-50 bg-surface text-ink flex flex-col"
           role="dialog"
           aria-modal="true"
           aria-label="Mobile navigation"
         >
-          <Container className="flex h-16 items-center justify-between">
-            <span className="font-display font-semibold text-sm">Menu</span>
+          {/* Tri-colour accent strip */}
+          <div
+            aria-hidden="true"
+            className="grid grid-cols-3 h-[3px]"
+          >
+            <div className="bg-live" />
+            <div className="bg-accent" />
+            <div className="bg-success" />
+          </div>
+          <Container className="flex h-20 items-center justify-between">
+            <Image
+              src="/brand/nhu-logo-transparent.png"
+              alt=""
+              width={56}
+              height={56}
+              className="h-14 w-14 object-contain"
+            />
             <button
               type="button"
               onClick={closeMenu}
-              className="inline-flex items-center justify-center h-10 w-10 -mr-2 text-surface hover:text-accent transition-colors"
+              className="inline-flex items-center justify-center h-10 w-10 -mr-2 text-ink hover:text-accent transition-colors rounded-full"
               aria-label="Close menu"
             >
               <X size={24} weight="regular" />
@@ -68,8 +82,8 @@ export function MobileNav({ items }: { items: NavItem[] }) {
                   key={item.href}
                   href={item.href}
                   onClick={closeMenu}
-                  className={`block py-4 text-2xl font-display font-semibold tracking-tight border-b border-ink-muted-on-dark/30 transition-colors ${
-                    active ? "text-accent" : "text-surface hover:text-accent"
+                  className={`block py-4 text-2xl font-display font-semibold tracking-tight border-b border-border transition-colors ${
+                    active ? "text-accent" : "text-ink hover:text-accent"
                   }`}
                 >
                   {item.label}
@@ -79,7 +93,7 @@ export function MobileNav({ items }: { items: NavItem[] }) {
             <Link
               href="/brand"
               onClick={closeMenu}
-              className="block py-4 text-base text-ink-muted-on-dark hover:text-accent transition-colors mt-4"
+              className="mt-6 inline-flex self-start items-center px-4 py-2 text-xs font-mono uppercase tracking-wider font-semibold text-ink bg-accent rounded-full"
             >
               Brand
             </Link>

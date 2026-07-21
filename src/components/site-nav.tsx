@@ -7,7 +7,7 @@ import type { NavItem } from "./mobile-nav";
 export function SiteNav({ items }: { items: NavItem[] }) {
   const pathname = usePathname();
   return (
-    <nav className="hidden md:flex items-center gap-1" aria-label="Primary">
+    <nav className="hidden md:flex items-center gap-0.5" aria-label="Primary">
       {items.map((item) => {
         const active =
           pathname === item.href ||
@@ -16,15 +16,17 @@ export function SiteNav({ items }: { items: NavItem[] }) {
           <Link
             key={item.href}
             href={item.href}
-            className={`relative px-3 py-2 text-sm font-medium transition-colors ${
-              active ? "text-accent" : "text-surface hover:text-accent"
+            className={`relative px-3 py-2 text-sm font-medium rounded-full transition-colors ${
+              active
+                ? "text-ink bg-surface-alt"
+                : "text-ink-muted hover:text-ink hover:bg-surface-alt/60"
             }`}
             aria-current={active ? "page" : undefined}
           >
             {item.label}
             {active && (
               <span
-                className="absolute left-3 right-3 -bottom-1 h-0.5 bg-accent"
+                className="absolute left-1/2 -translate-x-1/2 -bottom-0.5 h-[3px] w-6 rounded-full bg-accent"
                 aria-hidden="true"
               />
             )}
@@ -33,7 +35,7 @@ export function SiteNav({ items }: { items: NavItem[] }) {
       })}
       <Link
         href="/brand"
-        className="ml-2 px-3 py-2 text-sm font-medium text-ink-muted-on-dark hover:text-accent transition-colors"
+        className="ml-2 inline-flex items-center px-3 py-1.5 text-xs font-mono uppercase tracking-wider font-semibold text-ink bg-accent hover:bg-accent/90 rounded-full transition-colors"
       >
         Brand
       </Link>
