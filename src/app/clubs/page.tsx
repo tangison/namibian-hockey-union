@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Find a hockey club in Namibia. The NHU club directory — Windhoek, Swakopmund, Otjiwarongo and beyond — with training times, contacts, and team lists.",
   alternates: { canonical: "/clubs" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 // Verified venue

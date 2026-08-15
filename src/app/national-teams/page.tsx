@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "The six national squads of the Namibian Hockey Union — men and women, indoor and outdoor, senior and junior. Verified squad lists, captains, and head coaches.",
   alternates: { canonical: "/national-teams" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function NationalTeamsPage() {

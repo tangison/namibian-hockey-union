@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Contact the Namibian Hockey Union. Verified postal address, phone, email, and social channels.",
   alternates: { canonical: "/contact" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function ContactPage() {

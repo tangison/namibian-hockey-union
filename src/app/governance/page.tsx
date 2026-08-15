@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Governance of the Namibian Hockey Union — executive committee, affiliations, sponsors, and the policy framework that governs the sport nationally.",
   alternates: { canonical: "/governance" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function GovernancePage() {

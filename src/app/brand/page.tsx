@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "The public brand identity of the Namibian Hockey Union. Logo, colours, typography, and usage rules.",
   alternates: { canonical: "/brand" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function BrandPage() {

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Privacy policy",
   description: "Privacy policy of the Namibian Hockey Union website.",
   alternates: { canonical: "/privacy" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function PrivacyPage() {

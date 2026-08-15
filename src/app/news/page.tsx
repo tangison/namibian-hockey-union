@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "News and match reports from the Namibian Hockey Union — verified stories sourced from Namibian sport media, the FIH, AfHF, and the NHU's own social channels.",
   alternates: { canonical: "/news" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 // Verified news items (sourced via Tavily from Wikipedia / NBC Sport NA / NHU Instagram)

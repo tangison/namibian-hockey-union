@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Sitemap",
   description: "Human-readable sitemap of the Namibian Hockey Union website.",
   alternates: { canonical: "/sitemap" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function SitemapPage() {

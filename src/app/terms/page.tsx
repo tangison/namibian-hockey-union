@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Terms of use",
   description: "Terms of use of the Namibian Hockey Union website.",
   alternates: { canonical: "/terms" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function TermsPage() {

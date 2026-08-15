@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Verified results and honours for the Namibian Hockey Union — 2024 Indoor Africa Cup gold, 2025 World Games bronze, and the full national-team results archive.",
   alternates: { canonical: "/results" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function ResultsPage() {

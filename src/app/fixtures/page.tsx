@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Fixtures for the Namibian Hockey Union — upcoming outdoor and indoor matches, venues, kick-off times, and competitions.",
   alternates: { canonical: "/fixtures" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function FixturesPage() {

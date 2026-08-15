@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Tangison Studio", url: "https://studio.tangison.com" }],
   creator: "Tangison Studio",
   publisher: "Namibian Hockey Union",
-  robots: { index: false, follow: true }, // demo mode: noindex
+  robots: { index: true, follow: true }, // public since 2026-08-15
   icons: {
     icon: [
       { url: "/brand/nhu-logo-transparent.png", type: "image/png" },

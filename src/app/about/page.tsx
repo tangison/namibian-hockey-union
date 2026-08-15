@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   description:
     "About the Namibian Hockey Union — the national governing body for field and indoor hockey in Namibia. History, mission, structure, affiliations.",
   alternates: { canonical: "/about" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function AboutPage() {

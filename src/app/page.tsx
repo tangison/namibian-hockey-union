@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "The official home of hockey in Namibia. Fixtures, results, clubs, national teams, and the rules of the game.",
   alternates: { canonical: "/" },
-  robots: { index: false, follow: true }, // demo: noindex
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 // Curated real Namibian hockey imagery (sourced via Tavily, see PROOF.md)

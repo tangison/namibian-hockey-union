@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description:
     "Membership of the Namibian Hockey Union — player, coach, umpire, and official registration, fees, and benefits.",
   alternates: { canonical: "/membership" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true }, // public since 2026-08-15
 };
 
 export default function MembershipPage() {
